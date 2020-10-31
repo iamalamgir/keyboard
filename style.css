@@ -1,0 +1,369 @@
+/*****KeyBoard*****/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+}
+
+body{
+    background: #333;
+}
+
+/* .screen{
+    width: 1000px;
+    height: 80px;
+    background: #ffffff;
+    margin-top: 20px;
+    margin-left: 190px;
+} */
+
+/*========== keyboard container here ==========*/
+.container{
+    background: #eef0f0;
+    border: 30px solid #2c2d30;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 3px rgb(223, 223, 223);
+    width: 1300px;
+    height: 390px;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+h2{
+    font-size: 15px;
+    font-style: italic;
+    color: #ffb55a;
+    position: absolute;
+    margin: 335px 1100px 0px;
+}
+/*========== End ==========*/
+
+/*========== keyboard body ==========*/
+.keyboard-body{
+    border-radius: 3px;
+    box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, .3), 0px 0px 50px 1px rgba(0, 0, 0, .3);
+    margin: 0px auto;
+}
+/*========== End ==========*/
+
+/*========== function button area code start here ==========*/
+.btn-function{
+    
+}
+
+.key-function{
+    width: 45px;
+    height: 43px;
+    display: block;
+    float: left;
+    margin: 5px;
+    margin-bottom: 6px;
+    color: rgb(80, 80, 80);
+    /* box-shadow: 0px 1px 0px rgb(250, 250, 250),
+                0px 2px 0px rgb(250, 250, 250),
+                0px 3px 0px 1px rgb(250, 250, 250),
+                0px 4px 0px 2px rgb(70, 70, 70); */
+    box-shadow: -2px -2px 3px rgba(83, 83, 83, 0.4),
+                2px 2px 3px rgba(0,0, 0,0.35);
+    /* box-shadow: 3px 3px 3px #202125, -3px -3px 3px #3e3e3e; */
+    background: rgb(250, 250, 250);
+    border-radius: 3px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 13px;
+    padding-left: 2px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.key-function:hover {
+    color: greenyellow;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+
+#function{
+    padding-top: 4px;
+    width: 42px;
+    height: 24px;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+.fa-lock, .fa-moon-o, .fa-search, .fa-plane{
+    position: absolute;
+    margin: 5px 5px;
+    color: #ffb55a
+}
+
+#hidden{
+    padding-top: 4px;
+    width: 40px;
+    height: 20px;
+    font-size: 0.7em;
+    visibility: hidden;
+}
+
+.key-hidden{
+    width: 40px;
+    height: 40px;
+    display: block;
+    float: left;
+    margin: 5px;
+    margin-bottom: 6px;
+    color: rgb(80, 80, 80);
+    box-shadow: 0px 1px 0px rgb(250, 250, 250),
+                0px 2px 0px rgb(250, 250, 250),
+                0px 3px 0px 1px rgb(250, 250, 250),
+                0px 4px 0px 2px rgb(250, 250, 250);
+    background: rgb(249, 249, 249);
+    border-radius: 3px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: left;
+    padding-top: 13px;
+    padding-left: 2px;
+}
+
+.fa-fast-backward, .fa-play, .fa-fast-forward{
+    position: absolute;
+    margin: 5px 3px;
+    color: #ffb55a;
+    font-size: 10px;
+}
+
+.fa-volume-off, .fa-volume-down, .fa-volume-up{
+    position: absolute;
+    margin-left: 12px;
+    color: #ffb55a;
+    font-size: 20px;
+}
+
+#lock-9, #lock-A, #lock-V{
+    padding-top: 4px;
+    width: 42px;
+    height: 20px;
+    font-size: 0.9em;
+}
+
+.key-function1{
+    width: 40px;
+    height: 40px;
+    display: block;
+    float: left;
+    margin: 5px;
+    margin-bottom: 6px;
+    background: #eef0f0;
+    border-radius: 3px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: left;
+    padding-top: 13px;
+    padding-left: 2px;
+}
+
+.key-light:before{
+    display: block;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -1px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: rgb(4, 236, 97);
+    border-radius: 100%;
+}
+/*========== End ==========*/
+
+/*========== Alphabet button all here ==========*/
+.btn-key{
+    width: 828px;
+    float: left;
+    /* border: 1px solid red; */
+    margin-top: 4px;
+} 
+
+#backspace{
+    width: 100px;
+    height: 43px;
+    font-size: 0.8em;
+    padding-left: 20px;
+}
+
+#enter{
+    width: 100px;
+    height: 43px;
+    font-size: 0.9em;
+    padding-left: 44px;
+}
+
+#tab{
+    width: 72px;
+    height: 43px;
+    font-size: 0.9em;
+    padding-right: 20px;
+}
+
+#or, #ctrl{
+    width: 72px;
+    height: 43px;
+    font-size: 0.9em;
+}
+
+#caps-lock{
+    width: 100px;
+    height: 43px;
+    font-size: 0.9em;
+    padding-right: 13px;
+}
+
+.caps-light:before{
+    display: block;
+    position: absolute;
+    margin-left: 88px;
+    margin-top: -7px;
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: #000000;
+    border-radius: 100%;
+}
+
+#shift{
+    width: 127px;
+    height: 43px;
+    font-size: 0.9em;
+    padding-right: 70px;
+}
+
+#shift1{
+    width: 127px;
+    height: 43px;
+    font-size: 0.9em;
+    padding-left: 75px;
+}
+
+#space{
+    width: 320px;
+    height: 43px;
+    font-size: 0.9em;
+}
+
+.fa-windows, .fa-keyboard-o{
+    position: absolute;
+    color: #ffb55a;
+    font-size: 25px;
+    margin: -4px -13px 0px;
+}
+
+span{
+    position: absolute;
+    margin: -12px -22px 0px;
+    font-size: 0.8rem;
+}
+
+.fa-long-arrow-left{
+    position: absolute;
+    color: #000000;
+    margin: 3px -85px 0px;
+}
+
+.fa-exchange{
+    position: absolute;
+    color: #000000;
+    margin: 2px 10px 0px;
+}
+
+.fa-long-arrow-up{
+    position: absolute;
+    color: #000000;
+    margin: 2px 40px 0px;
+}
+
+#shift-icon1{
+    position: absolute;
+    color: #000000;
+    margin: 2px -75px 0px;
+}
+/*========== End ==========*/
+
+/*========== Insert/PgDn key button area here ==========*/
+.btn-middle{
+    width: 168px;
+    float: left;
+    /* border: 1px solid green; */
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    font-size: 12px;
+}
+
+#end{
+    text-align: center;
+}
+
+#arrow-up{
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 40px;
+    margin-bottom: 15px;
+}
+
+.fa-arrow-up, .fa-arrow-left, .fa-arrow-down,
+.fa-arrow-right{
+    color: #000000;
+    font-size: 20px;
+}
+
+/*========== End ==========*/
+
+/*========== Number key button area here ==========*/
+.btn-number{
+    width: 224px;
+    float: left;
+    /* border: 1px solid red; */
+    margin-top: 4px;
+} 
+
+.number1{
+    width: 167px;
+    float: left;
+    /* border: 1px solid red; */
+} 
+
+#num-lock{
+    font-size: 12px;
+}
+
+#plus, #num-enter{
+    width: 43px;
+    height: 98px;
+    font-size: 0.9em;
+    padding-top: 40px;
+}
+
+#zero{
+    width: 100px;
+    height: 43px;
+    font-size: 0.9em;
+}
+/*========== End ==========*/
+
+/* others
+.key-small-type{
+    font-size: 0.5em;
+    line-height: 40px;
+    vertical-align: bottom;
+    text-align: left;
+    padding-left: 0.4em;
+}*/
